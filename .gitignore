@@ -1,0 +1,9 @@
+target/*
+!.gitignore
+.classpath
+.project
+.settings
+.DS_Store
+*.jar
+TODO
+bin/
