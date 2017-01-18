@@ -19,16 +19,15 @@ We assume that you have a complete java end-to-end application using Spring 3.0 
 Copy [Rhoconncect-java](https://github.com/downloads/rhomobile/rhoconnect-java/rhoconnect-java-1.0.1.jar) plugin jar file to your PC.
 You can also create target rhoconnect-java plugin jar from sources by cloning rhoconnect-java repository 
 
-    :::term
-    $ git clone git@github.com:rhomobile/rhoconnect-java.git
-
+```
+$ git clone git@github.com:rhomobile/rhoconnect-java.git
+```
 and executing in cloned project directory the following commands:
-
-    :::term
-    $ mvn clean
-    $ mvn compile
-    $ mvn jar:jar
-
+```
+$ mvn clean
+$ mvn compile
+$ mvn jar:jar
+```
 The archived rhoconnect-java-x.y.z.jar file will be created in the project target/ directory.
 
 For testing and evaluation purposes you can use [RhoconnectJavaSample](https://github.com/shurab/RhoconnectJavaSample) application as a starting point before continuing with the following steps. 
@@ -37,7 +36,7 @@ For testing and evaluation purposes you can use [RhoconnectJavaSample](https://g
 
 Add dependencies to your Apache Maven 2 project object model (POM): log4j, Apache common beanutils, and Jackson JSON mapper. In the RhoconnectJavaSample application, this code is in the pom.xml file.
 
-    :::xml
+```xml
     <!-- Log4j -->
     <dependency>
         <groupId>log4j</groupId>
@@ -59,7 +58,8 @@ Add dependencies to your Apache Maven 2 project object model (POM): log4j, Apach
         <type>jar</type>  
         <optional>false</optional>  
     </dependency>
-
+ ```
+    
 You must also add the rhoconnect-java jar to your Maven 2 project. At this moment rhoconnect-plugin jar is not available in Maven public repositories and you need install the jar manually into your Maven's local repository.
 Download the `rhoconnect-java-1.0.0.jar` jar file and put it into your hard drive, and issue the following Maven's command:
 
